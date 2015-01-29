@@ -1,5 +1,5 @@
 require 'sinatra'
-require_relative './model/box_office'
+require_relative './model/movie_data'
 
 
 get '/' do
