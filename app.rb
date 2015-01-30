@@ -8,6 +8,7 @@ end
 
 get '/my-movies' do
   @active = 'my movies'
+  @movies = MovieData.all
   erb :my_movies
 end
 

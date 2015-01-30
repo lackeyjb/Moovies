@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="row">
+    <% @movies.each do |movie| %>
+    <div class="col-sm-4 col-lg-4">
+      <img width="166" height="236" src="/img/<%= movie.poster%>" />
+    </div>
+    <% end %>
+  </div>
+</div>

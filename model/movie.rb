@@ -1,5 +1,7 @@
 # describes movie information
 class Movie
+    attr_reader :id, :name, :year_released, :genre, :director
+    attr_reader :actors, :rating, :description, :poster
 
   def initialize(args)
     @id            = args[:id]
