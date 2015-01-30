@@ -1,4 +1,4 @@
-
+# describes movie information
 class Movie
 
   def initialize(args)
