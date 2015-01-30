@@ -21,16 +21,12 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
 
         <ul class="nav navbar-nav">
-          <li <%= 'class="active"' if @active == 'my movies' %>><a href="/my-movies">My Movies</a></li>
-          <li <%= 'class="active"' if @active == 'your movies' %>><a href="/your-movies">Your Movies</a></li>
+          <li <%= 'class="active"' if @active == 'movies' %>><a href="/movies">Movies</a></li>
           <li <%= 'class="active"' if @active == 'about' %>><a href="/about">About</a></li>
         </ul>
       </div>
     </nav>
     <%= yield %>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container"></div>
-    </nav>
            <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
