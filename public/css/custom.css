@@ -1,6 +1,0 @@
-/* Overides Bootstrap */
-@media (max-width: 768px) {
-  .dropdown-menu, .dropdown-menu-right, .dropdown-toggle {
-    display: none;
-  }
-}
