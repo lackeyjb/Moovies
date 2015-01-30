@@ -1,9 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <% @movies.each do |movie| %>
-    <div class="col-sm-4 col-lg-4">
-      <img width="166" height="236" src="/img/<%= movie.poster%>" />
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <img class="img-responive" width="166" height="236" src="/img/<%= movie.poster%>" alt="<%= movie.name%>" />
     </div>
+    <div class="col-lg-1"></div>
     <% end %>
   </div>
 </div>
