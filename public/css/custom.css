@@ -4,6 +4,10 @@
   background-color: transparent;
 }
 
+a:focus {
+  outline: none;
+}
+
 .movie {
   margin: 5px; 
   padding-bottom: 5px;
