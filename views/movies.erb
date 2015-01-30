@@ -6,16 +6,16 @@
       <!-- Image triggers modal -->
 
       <a href="#myModal_<%=movie.id%>" role="button" data-toggle="modal">
-        <img class="img-responive" width="166" height="236" src="/img/<%= movie.poster%>" alt="<%= movie.name%>" />
+        <img class="img-responive movie" width="166" height="236" src="/img/<%= movie.poster%>" />
       </a>
       
       <!-- Modal -->
       
-      <div class="modal fade" id="myModal_<%=movie.id%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="myModal_<%=movie.id%>" tabindex="-1" role="dialog" aia-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
               <h4 class="modal-title" id="myModalLabel"><%= movie.name %></h4>
             </div>
             <div class="modal-body">
@@ -37,9 +37,8 @@
             </div>          
           </div>
         </div>
-      </div>    <!-- end Modal -->
-
-      <% end %>
+      </div>    <!-- end Modal  -->
+      <%end%>
     </div>
   </div>
 </div>
