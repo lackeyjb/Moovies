@@ -6,15 +6,10 @@ get '/' do
   erb :home
 end
 
-get '/my-movies' do
-  @active = 'my movies'
+get '/movies' do
+  @active = 'movies'
   @movies = MovieData.all
-  erb :my_movies
-end
-
-get '/your-movies' do
-  @active = 'your movies'
-  erb :your_movies 
+  erb :movies
 end
 
 get '/about' do

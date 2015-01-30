@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10">
+      <% @movies.each do |movie| %>
+    
+      <!-- Image triggers modal -->
+
+      <a href="#myModal_<%=movie.id%>" role="button" data-toggle="modal">
+        <img class="img-responive" width="166" height="236" src="/img/<%= movie.poster%>" alt="<%= movie.name%>" />
+      </a>
+      
+      <!-- Modal -->
+      
+      <div class="modal fade" id="myModal_<%=movie.id%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"><%= movie.name %></h4>
+            </div>
+            <div class="modal-body">
+              <dl class="dl-horizontal">
+                <dt>Genre:</dt>
+                <dd><%= movie.genre%></dd>
+                <br>
+                <dt>Release Date:</dt>
+                <dd><%= movie.year_released%></dd>
+                <br>
+                <dt>Director:</dt>
+                <dd><%= movie.director%></dd>
+                <br>
+                <dt>Actors:</dt>
+                <dd><%= movie.actors.join(", ")%></dd>
+                <br>
+                <dt>Description:</dt>
+                <dd><%= movie.description %></dd>
+            </div>          
+          </div>
+        </div>
+      </div>    <!-- end Modal -->
+
+      <% end %>
+    </div>
+  </div>
+</div>
