@@ -206,8 +206,16 @@ class MovieData
     end
   end
 
-  def self.arrange(pattern)
-    all.sort_by { |pattern| pattern }
+  def self.arrange_by_name
+    all.sort_by { |movie| movie.name }
+  end
+
+  def self.arrange_by_year
+    all.sort_by { |movie| movie.year_released }
+  end
+
+  def self.arrange_by_rating
+    all.sort_by { |movie| movie.rating }
   end
 
 end

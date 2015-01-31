@@ -8,11 +8,22 @@ end
 get '/movies' do
   @active = 'movies'
   @search = params[:search]
+  @sort   = params[:sort]
   if @search && @search.length > 0
     @movies = MovieData.search(@search)
-  else
+  else  
     @movies = MovieData.all
-  end   
+  end
+
+  case @sort
+  when "name"
+  @movies = MovieData.arrange_by_name
+  when "year"
+  @movies = MovieData.arrange_by_year
+  when "rating"
+  @movies = MovieData.arrange_by_rating
+  end
+   
   erb :movies, :layout=> :movie_layout
 end
 

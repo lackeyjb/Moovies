@@ -40,21 +40,21 @@
         </div>        
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-1 pull-right"
-          <div class="btn-group">
-            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-              Sort by<span class="caret"></span>
+        <div class="col-lg-2 pull-right">
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              Sort by
+              <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="<% @movies.sort_by{ |movie| movie.name } %>">Title</a></li>
-              <li><a href="#">Year released</a></li>
-              <li><a href="#">Critic rating</a></li>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?search=<%= @search%>&sort=<%=@sort ="name"%>">Title</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ="year"%>">Release Year</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ="rating"%>">IMDB rating</a></li>
             </ul>
           </div>
         </div>
-      </div>
     </div>
     <%= yield %>
            <!-- Latest compiled and minified JavaScript -->
