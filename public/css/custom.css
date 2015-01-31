@@ -13,6 +13,14 @@ a:focus {
   padding-bottom: 5px;
 }
 
+.btn-group {
+  position: relative;
+  left: 35%;
+}
+
+
+
+
 
 
 

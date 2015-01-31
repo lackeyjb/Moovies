@@ -14,7 +14,7 @@ class MovieData
                 rating: 8.8,
                 description: 'A team of explorers travel through a wormhole 
                               in an attempt to ensure humanity\'s survival.',
-                poster: 'http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX640_SY720_.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg',
                 trailer: 'https://www.youtube.com/watch?v=2LqzF5WauAw'
                 ),
       Movie.new(id: 2,
@@ -77,7 +77,7 @@ class MovieData
                 description: 'When the menace known as the Joker wreaks havoc and chaos on the people of 
                               Gotham, the caped crusader must come to terms with one of the greatest psychological 
                               tests of his ability to fight injustice.',
-                poster: 'http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX640_SY720_.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg',
                 trailer: 'https://www.youtube.com/watch?v=yQ5U8suTUw0'
                 ),
       Movie.new(id: 7,
@@ -114,7 +114,7 @@ class MovieData
                 rating: 8.6,
                 description: 'Following the Normandy Landings, a group of U.S. soldiers go behind enemy 
                               lines to retrieve a paratrooper whose brothers have been killed in action.',
-                poster: 'http://fontmeme.com/images/Saving-Private-Ryan-Poster.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg',
                 trailer: 'https://www.youtube.com/watch?v=zwhP5b4tD6g' 
                 ),
       Movie.new(id: 10,
@@ -152,7 +152,7 @@ class MovieData
                 rating: 8.3,
                 description: 'Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs 
                               help from a psychologist to find direction in his life.',
-                poster: 'http://ia.media-imdb.com/images/M/MV5BMTk0NjY0Mzg5MF5BMl5BanBnXkFtZTcwNzM1OTM2MQ@@._V1_SX640_SY720_.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/b/b8/Good_Will_Hunting_theatrical_poster.jpg',
                 trailer: 'https://www.youtube.com/watch?v=PaZVjZEFkRs' 
                 ),
       Movie.new(id: 13,
@@ -165,7 +165,7 @@ class MovieData
                 rating: 8.2,
                 description: 'Earth\'s mightiest heroes must come together and learn to fight as a team 
                               if they are to stop the mischievous Loki and his alien army from enslaving humanity.',
-                poster: 'http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX640_SY720_.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg',
                 trailer: 'https://www.youtube.com/watch?v=eOrNdBpGMv8'
                 ),
       Movie.new(id: 14,
@@ -178,7 +178,7 @@ class MovieData
                 description: 'As Steve Rogers struggles to embrace his role in the modern world, he 
                               teams up with another super soldier, the black widow, to battle a new threat 
                               from old history: an assassin known as the Winter Soldier.',
-                poster: 'http://ia.media-imdb.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_SX640_SY720_.jpg',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/e/e8/Captain_America_The_Winter_Soldier.jpg',
                 trailer: 'https://www.youtube.com/watch?v=BzntMEtOUd4'
                 ),
       Movie.new(id: 15,
@@ -196,10 +196,23 @@ class MovieData
     ]
   end
 
-  def self.find(name)
-    self.all.find do |movie|
-      movie.name == name
+  def self.search(pattern)
+    all.select do |movie|
+      movie.genre.downcase.include?(pattern.downcase)          ||
+      movie.name.downcase.include?(pattern.downcase)           ||
+      movie.description.downcase.include?(pattern.downcase)    ||
+      movie.director.downcase.include?(pattern.downcase)       ||
+      movie.actors.join("").downcase.include?(pattern.downcase)    
     end
   end
 
+  def self.arrange(pattern)
+    all.sort_by { |pattern| pattern }
+  end
+
 end
+
+
+
+
+
