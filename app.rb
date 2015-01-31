@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'json'
 require_relative './model/movie_data'
 
 get '/' do
