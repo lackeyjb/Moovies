@@ -1,9 +1,3 @@
-require_relative './movie_data'
-
-require 'json'
-movie = JSON.parse(response.body)
-movie['title'] #=&gt; the title of the movie
-movie['id']
 
 # describes movie information
 class Movie
