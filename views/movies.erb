@@ -7,7 +7,7 @@
         <!-- Image triggers modal -->
 
         <a href="#myModal_<%=movie.id%>" role="button" data-toggle="modal">
-          <img class="img-responive movie" width="166" height="236" src="<%= movie.poster%>" />
+          <img class="img-responive movie animated bounceInLeft" width="166" height="236" src="<%= movie.poster%>" />
         </a>
       
         <!-- Modal -->
@@ -37,6 +37,9 @@
                   <dd><%= movie.description %></dd>
                   <dt>IMDB rating:</dt>
                   <dd><%= movie.rating %></dd>
+                  <br>
+  <iframe class="embed-responsive-item" width="560" height="315" src="<%= movie.trailer %>" allowfullscreen=""></iframe>
+
               </div>          
             </div>
           </div>

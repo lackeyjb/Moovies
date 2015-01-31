@@ -18,6 +18,16 @@ a:focus {
   left: 35%;
 }
 
+.cow {
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+}
+
+.popcorn, .chaplin {
+  border-radius: 20px;
+}
+
 
 
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MovieApp</title>
+    <title>Moovies</title>
     <!-- Latest compiled and minified CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/darkly/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
   </head>
   <body>
 
@@ -16,7 +17,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" rel="home" href="/" title="...">MovieApp</a>
+        <a class="navbar-brand" rel="home" href="/" title="Moovies">Moovies</a>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
 
@@ -40,21 +41,7 @@
         </div>        
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2 pull-right">
-          <div class="dropdown">
-            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-              Sort by
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ="name"%>">Title</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ="year"%>">Release Year</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ="rating"%>">IMDB rating</a></li>
-            </ul>
-          </div>
-        </div>
+   
     </div>
     <%= yield %>
            <!-- Latest compiled and minified JavaScript -->

@@ -15,7 +15,7 @@ class MovieData
                 description: 'A team of explorers travel through a wormhole 
                               in an attempt to ensure humanity\'s survival.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=2LqzF5WauAw'
+                trailer: 'https://www.youtube.com/embed/2LqzF5WauAw'
                 ),
       Movie.new(id: 2,
                 name: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -27,7 +27,7 @@ class MovieData
                 description: 'A meek hobbit of the Shire and eight companions set out on a 
                               journey to Mount Doom to destroy the One Ring and the dark lord Sauron.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg',
-                trailer: 'https://www.youtube.com/watch?v=VIgkpEgCV-I'
+                trailer: 'https://www.youtube.com/embed/VIgkpEgCV-I'
                 ),
       Movie.new(id: 3,
                 name: 'Gladiator',
@@ -39,7 +39,7 @@ class MovieData
                 description: 'When a Roman general is betrayed and his family murdered by an 
                               emperor\'s corrupt son, he comes to Rome as a gladiator to seek revenge.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_ver1.jpg',
-                trailer: 'https://www.youtube.com/watch?v=owK1qxDselE'
+                trailer: 'https://www.youtube.com/embed/owK1qxDselE'
                 ),
       Movie.new(id: 4,
                 name: 'North by Northwest',
@@ -52,7 +52,7 @@ class MovieData
                               by a group of foreign spies, and is pursued across the 
                               country while he looks for a way to survive.',
                 poster: 'http://content8.flixster.com/movie/11/16/80/11168082_800.jpg',
-                trailer: 'https://www.youtube.com/watch?v=9NPI9QeeDDc'
+                trailer: 'https://www.youtube.com/embed/9NPI9QeeDDc'
                 ),
       Movie.new(id: 5,
                 name: 'The Shawshank Redemption',
@@ -64,7 +64,7 @@ class MovieData
                 description: 'Two imprisoned men bond over a number of years, finding 
                               solace and eventual redemption through acts of common decency.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=6hB3S9bIaco'
+                trailer: 'https://www.youtube.com/embed/6hB3S9bIaco'
                 ),
       Movie.new(id: 6,
                 name: 'The Dark Knight',
@@ -78,7 +78,7 @@ class MovieData
                               Gotham, the caped crusader must come to terms with one of the greatest psychological 
                               tests of his ability to fight injustice.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg',
-                trailer: 'https://www.youtube.com/watch?v=yQ5U8suTUw0'
+                trailer: 'https://www.youtube.com/embed/yQ5U8suTUw0'
                 ),
       Movie.new(id: 7,
                 name: 'Forrest Gump',
@@ -90,7 +90,7 @@ class MovieData
                 description: 'Forrest Gump, while not intelligent, has accidentally been present at many historic 
                               moments, but his true love, Jenny Curran, eludes him.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=8dcYw4OwCA0'
+                trailer: 'https://www.youtube.com/embed/8dcYw4OwCA0'
                 ),
       Movie.new(id: 8,
                 name: 'Indiana Jones and the Last Crusade',
@@ -103,7 +103,7 @@ class MovieData
                               eminent archaeologist Indiana Jones must follow in his father\'s footsteps and 
                               stop the Nazis.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/f/fc/Indiana_Jones_and_the_Last_Crusade_A.jpg',
-                trailer: 'https://www.youtube.com/watch?v=A7TaY8HWYd8'
+                trailer: 'https://www.youtube.com/embed/A7TaY8HWYd8'
                 ),
       Movie.new(id: 9,
                 name: 'Saving Private Ryan',
@@ -115,7 +115,7 @@ class MovieData
                 description: 'Following the Normandy Landings, a group of U.S. soldiers go behind enemy 
                               lines to retrieve a paratrooper whose brothers have been killed in action.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=zwhP5b4tD6g' 
+                trailer: 'https://www.youtube.com/embed/zwhP5b4tD6g' 
                 ),
       Movie.new(id: 10,
                 name: 'Back to the Future',
@@ -128,7 +128,7 @@ class MovieData
                               DeLorean invented by his friend, Dr. Emmett Brown, and must make sure his 
                               high-school-age parents unite in order to save his own existence.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg',
-                trailer: 'https://www.youtube.com/watch?v=qvsgGtivCgs' 
+                trailer: 'https://www.youtube.com/embed/qvsgGtivCgs' 
                 ),
       Movie.new(id: 11,
                 name: 'Braveheart',
@@ -141,7 +141,7 @@ class MovieData
                               who tried to rape her, William Wallace begins a revolt and leads Scottish 
                               warriors against the cruel English tyrant who rules Scotland with an iron fist.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg',
-                trailer: 'https://www.youtube.com/watch?v=wj0I8xVTV18' 
+                trailer: 'https://www.youtube.com/embed/wj0I8xVTV18' 
                 ),
       Movie.new(id: 12,
                 name: 'Good Will Hunting',
@@ -153,7 +153,7 @@ class MovieData
                 description: 'Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs 
                               help from a psychologist to find direction in his life.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/b/b8/Good_Will_Hunting_theatrical_poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=PaZVjZEFkRs' 
+                trailer: 'https://www.youtube.com/embed/PaZVjZEFkRs' 
                 ),
       Movie.new(id: 13,
                 name: 'The Avengers',
@@ -166,7 +166,7 @@ class MovieData
                 description: 'Earth\'s mightiest heroes must come together and learn to fight as a team 
                               if they are to stop the mischievous Loki and his alien army from enslaving humanity.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=eOrNdBpGMv8'
+                trailer: 'https://www.youtube.com/embed/eOrNdBpGMv8'
                 ),
       Movie.new(id: 14,
                 name: 'Captain America: The Winter Soldier',
@@ -179,7 +179,7 @@ class MovieData
                               teams up with another super soldier, the black widow, to battle a new threat 
                               from old history: an assassin known as the Winter Soldier.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/e/e8/Captain_America_The_Winter_Soldier.jpg',
-                trailer: 'https://www.youtube.com/watch?v=BzntMEtOUd4'
+                trailer: 'https://www.youtube.com/embed/BzntMEtOUd4'
                 ),
       Movie.new(id: 15,
                 name: 'Open Range',
@@ -191,7 +191,7 @@ class MovieData
                 description: 'A former gunslinger is forced to take up arms again when he and his 
                               cattle crew are threatened by a corrupt lawman.',
                 poster: 'https://upload.wikimedia.org/wikipedia/en/0/02/Open_range_poster.jpg',
-                trailer: 'https://www.youtube.com/watch?v=4werfN6fQ44'
+                trailer: 'https://www.youtube.com/embed/4werfN6fQ44'
                 ),
     ]
   end
@@ -204,18 +204,6 @@ class MovieData
       movie.director.downcase.include?(pattern.downcase)       ||
       movie.actors.join("").downcase.include?(pattern.downcase)    
     end
-  end
-
-  def self.arrange_by_name
-    all.sort_by { |movie| movie.name }
-  end
-
-  def self.arrange_by_year
-    all.sort_by { |movie| movie.year_released }
-  end
-
-  def self.arrange_by_rating
-    all.sort_by { |movie| movie.rating }
   end
 
 end
