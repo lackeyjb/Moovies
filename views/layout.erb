@@ -25,30 +25,25 @@
           <li <%= 'class="active"' if @active == 'about' %>><a href="/about">About</a></li>
         </ul>
      
-        <div class="col-sm-5 col-md-4 pull-right">
+        <div class="col-sm-5 col-md-5 pull-right">
+
           <form class="navbar-form" role="search">
             <div class="input-group">
-                <input type="text" name="search" value="<%= @search %>" class="form-control" placeholder="Search">
-                <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                  <button type="reset" class="btn btn-default"
-      onclick="window.location.href='/movies'"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-                
+              <input type="text" name="search" href="/movies?search=<%= @search %>" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                <button type="reset" class="btn btn-default"
+                  onclick="window.location.href='/movies'"><i class="glyphicon glyphicon-remove"></i></button>
+              </div>
             </div>
           </form>
-        </div>        
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2 pull-right">
+        </div>
+        <div class="col-md-1 pull-right">
           <div class="dropdown">
-            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-              Sort by
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Sort by
               <span class="caret"></span>
             </button>
-             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
               <li role="presentation">
                 <a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort = 'name'%><%= params[:search] ? "&search=#{params[:search]}" : "" %>">Title</a>
               </li>
@@ -57,7 +52,8 @@
             </ul>
           </div>
         </div>
-    </div>
+      </div> 
+    </nav>
     <%= yield %>
            <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

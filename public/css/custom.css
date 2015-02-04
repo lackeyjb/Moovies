@@ -13,9 +13,8 @@ a:focus {
   padding-bottom: 5px;
 }
 
-.btn-group {
-  position: relative;
-  left: 35%;
+.dropdown {
+  margin-top: 9px;
 }
 
 

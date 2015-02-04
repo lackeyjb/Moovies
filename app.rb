@@ -8,6 +8,7 @@ get '/' do
 end
 
 get '/movies' do
+  @active = 'movies'
   term    = params[:search]
   sort_by = params[:sort]
 
