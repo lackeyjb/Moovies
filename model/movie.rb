@@ -1,3 +1,4 @@
+
 # describes movie information
 class Movie
     attr_reader :id, :name, :year_released, :genre, :director

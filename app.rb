@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pry'
 require_relative './model/movie_data'
 
 
