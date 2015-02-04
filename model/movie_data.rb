@@ -196,54 +196,15 @@ class MovieData
     ]
   end
 
-  def self.search(search)
-    all.select do |movie|
-      movie.genre.downcase.include?(search.downcase)          ||
-      movie.name.downcase.include?(search.downcase)           ||
-      movie.description.downcase.include?(search.downcase)    ||
-      movie.director.downcase.include?(search.downcase)       ||
-      movie.actors.join("").downcase.include?(search.downcase)    
+  def self.search_for(term)
+    self.all.select do |movie|
+      movie.genre.downcase.include?(term.downcase)          ||
+      movie.name.downcase.include?(term.downcase)           ||
+      movie.description.downcase.include?(term.downcase)    ||
+      movie.director.downcase.include?(term.downcase)       ||
+      movie.actors.join("").downcase.include?(term.downcase)    
     end
   end
-
-  def self.arrange_by_name(movie_data)
-    movie_data.sort_by { |movie| movie.name }
-  end
-
-  def self.arrange_by_year(movie_data)
-    movie_data.sort_by { |movie| movie.year_released }
-  end
-
-  def self.arrange_by_rating(movie_data)
-    movie_data.sort_by { |movie| movie.rating }
-  end
-
-  def self.movies_sort(movies, category)
-    case category
-    when 'name'
-      arrange_by_name(movies)
-    when 'year'
-      arrange_by_year(movies)
-    when 'rating'
-      arrange_by_rating(movies)
-    else
-      all
-    end
-  end
-
-  def self.movies_search_sort(query, category)
-    if query && query.length > 0
-      search(query)
-    else
-      all
-    end
-    if category && category.length > 0
-      movies_sort(movies, category)
-    else
-      all
-    end
-  end
-
 end
 
 

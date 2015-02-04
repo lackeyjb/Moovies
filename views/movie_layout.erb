@@ -49,9 +49,11 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort = 'name'%>">Title</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ='year'%>">Release Year</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ='rating'%>">IMDB rating</a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort = 'name'%><%= params[:search] ? "&search=#{params[:search]}" : "" %>">Title</a>
+              </li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ='year_released'%><%= params[:search] ? "&search=#{params[:search]}" : "" %>">Release Year</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="/movies?sort=<%=@sort ='rating'%><%= params[:search] ? "&search=#{params[:search]}" : "" %>">IMDB rating</a></li>
             </ul>
           </div>
         </div>
