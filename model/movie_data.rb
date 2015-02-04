@@ -1,7 +1,7 @@
 require_relative './movie'
 
 #Collection of movie data
-class MovieData
+class Movies
 
   def self.all
     [

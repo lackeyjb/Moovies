@@ -11,7 +11,7 @@ get '/movies' do
   term    = params[:search]
   sort_by = params[:sort]
 
-  @movies = term ? MovieData.search_for(term) : MovieData.all
+  @movies = term ? Movies.search_for(term) : Movies.all
   @movies.sort! { |x, y| x.send(sort_by) <=> y.send(sort_by) } if sort_by
 
   erb :movies
